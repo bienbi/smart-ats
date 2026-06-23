@@ -163,15 +163,22 @@ The web interface is built in React JS with a dark theme and custom components:
 ## Screenshots
 
 ### Main Dashboard
-![Main Dashboard](assets/images/dashboard.png)
+<img width="2560" height="1322" alt="image" src="https://github.com/user-attachments/assets/e3b7756b-4d86-4c28-97a1-c92efa0f7b01" />
+
 *HR dashboard listing analyzed candidates, scores, and status*
 
 ### Resume Analysis Detail
-![Resume Analysis](assets/images/resume_analysis.png)
+<img width="2556" height="1326" alt="image" src="https://github.com/user-attachments/assets/848bcdfd-7764-4372-8d03-aa8ba6407bec" />
+<img width="2556" height="1326" alt="image" src="https://github.com/user-attachments/assets/a84e08fe-6c7f-4318-98fe-e1fd9e0d4b4c" />
+<img width="2560" height="1330" alt="image" src="https://github.com/user-attachments/assets/44da4f5b-112c-44cf-b864-bea45d126e0e" />
+
+
+
 *Detailed drawer showing skill gaps, AI recruiter notes, and weighting factors*
 
 ### AI Mock Interview Room
-![Interview Chat](docs/images/frontend.png)
+<img width="2538" height="1318" alt="image" src="https://github.com/user-attachments/assets/d1dc70e5-5e3e-493e-8920-258a915e8d4d" />
+
 *Interactive chat room showing candidate answer inputs and AI evaluation scores*
 
 ## Development
