@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo đánh giá chi tiết</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    html { zoom: 90%; }
+    body { font-family: 'Inter', sans-serif; max-width: 900px; margin: 0 auto; padding: 30px; color: #1e293b; background: #f8fafc; line-height: 1.6; }
+    .header-card { background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); color: white; padding: 24px 30px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15); }
+    .header-card h1 { margin: 0; font-size: 28px; font-weight: 700; }
+    .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; font-size: 14px; opacity: 0.9; }
+    
+    .section-card { background: white; border-radius: 16px; padding: 24px 30px; margin-bottom: 24px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); border: 1px solid #f1f5f9; }
+    .section-title { font-size: 20px; font-weight: 600; color: #0f172a; margin-top: 0; margin-bottom: 20px; border-left: 4px solid #4f46e5; padding-left: 12px; }
+    
+    .score-container { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-bottom: 20px; }
+    .score-circle { width: 100px; height: 100px; border-radius: 50%; border: 6px solid #e2e8f0; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; color: #f59e0b; margin-bottom: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .score-message { font-size: 16px; font-weight: 600; color: #334155; }
+    
+    .recruiter-note { background: #f0fdfa; border-left: 4px solid #14b8a6; padding: 16px 20px; border-radius: 0 12px 12px 0; margin-top: 15px; font-style: italic; color: #0f766e; }
+    
+    table { width: 100%; border-collapse: collapse; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; font-size: 14px;}
+    th { background: #f1f5f9; color: #475569; padding: 12px; font-weight: 600; text-align: left; border-bottom: 2px solid #e2e8f0; }
+    td { border-bottom: 1px solid #e2e8f0; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) { background: #f8fafc; }
+    
+    ul.checklist { list-style-type: disc; padding-left: 20px; margin: 0; }
+    ul.checklist li { margin-bottom: 10px; font-size: 15px; }
+    
+    .tech-grid { display: grid; gap: 15px; margin-top: 15px; }
+    .tech-item { background: #f8fafc; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; }
+    .tech-label { font-weight: 600; color: #475569; font-size: 14px; margin-bottom: 6px; }
+    .badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 13px; font-weight: 500; margin-right: 6px; margin-bottom: 6px; }
+    .badge.core { background: #fee2e2; color: #ef4444; border: 1px solid #fca5a5; }
+    .badge.supp { background: #ffedd5; color: #f97316; border: 1px solid #fdba74; }
+    .badge.tool { background: #f3e8ff; color: #a855f7; border: 1px solid #d8b4fe; }
+    
+    .question-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; margin-bottom: 15px; }
+    .question-title { font-weight: 600; color: #4f46e5; margin-bottom: 8px; font-size: 15px; }
+    .question-body { font-style: italic; color: #475569; border-left: 3px solid #cbd5e1; padding-left: 12px; }
+    
+    footer { text-align: center; color: #94a3b8; font-size: 13px; margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 20px; }
+</style>
+</head>
+<body>
+
+<div class="header-card">
+    <h1>Báo cáo đánh giá chi tiết</h1>
+    <div class="meta-grid">
+        <div><strong>Ứng viên:</strong> Trần Trung Khánh</div>
+        <div><strong>Ngày tạo:</strong> 18/06/2026 lúc 10:51</div>
+        <div><strong>Vị trí ứng tuyển:</strong> Fullstack Developer (Python / Vue.Js)</div>
+    </div>
+</div>
+
+<div class="section-card">
+    <h2 class="section-title">1. Đánh giá tổng quan</h2>
+    <div class="score-container">
+        <div class="score-circle">53.65</div>
+        <div class="score-message">Phù hợp một phần. Cần cải thiện CV để phù hợp hơn với vị trí này.</div>
+    </div>
+    
+    <div style="font-weight: 600; color: #0f172a; margin-top: 20px;">Nhận xét & khuyến nghị tuyển dụng</div>
+    <div class="recruiter-note">
+        Ứng viên có nền tảng Java backend vững chắc (Spring, VertX) và kinh nghiệm Python, nhưng hoàn toàn thiếu Vue.js - công nghệ core của JD. Tuy nhiên, ứng viên có tư duy lập trình tốt, kinh nghiệm đa dạng (NodeJs, ReactJs, Python) và sử dụng thành thạo Docker, CI/CD, cloud. Với nền tảng CS mạnh và khả năng tự học, ứng viên có thể chuyển đổi sang Vue.js trong 1-2 tháng. <b>KHUYẾN NGHỊ PHỎNG VẤN (chấp nhận đào tạo lại)</b>.
+    </div>
+</div>
+
+<div class="section-card">
+    <h2 class="section-title">2. Bảng điểm chi tiết</h2>
+    <table style="width:100%; margin-top: 10px;">
+        <thead>
+            <tr>
+                <th style="padding:12px;text-align:left;">Tiêu chí</th>
+                <th style="padding:12px;text-align:center;width:100px;">Trọng số</th>
+                <th style="padding:12px;text-align:center;width:120px;">Điểm số (100)</th>
+                <th style="padding:12px;text-align:center;width:130px;">Điểm thành phần</th>
+                <th style="padding:12px;text-align:left;">Đánh giá nhanh</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td style="padding:12px;font-weight:600;">Kỹ năng chuyên môn</td>
+                <td style="padding:12px;text-align:center;">50%</td>
+                <td style="padding:12px;text-align:center;color:#f59e0b;font-weight:bold;">58.0</td>
+                <td style="padding:12px;text-align:center;font-weight:bold;">29.0</td>
+                <td style="padding:12px;font-size:0.9em;color:#4a5568;">Có Python, thiếu Vue.js, có kinh nghiệm backend đa dạng.</td>
+            </tr>
+            <tr>
+                <td style="padding:12px;font-weight:600;">Kinh nghiệm thực chiến</td>
+                <td style="padding:12px;text-align:center;">30%</td>
+                <td style="padding:12px;text-align:center;color:#ef4444;font-weight:bold;">15.0</td>
+                <td style="padding:12px;text-align:center;font-weight:bold;">5.0</td>
+                <td style="padding:12px;font-size:0.9em;color:#4a5568;">Gần 6 năm kinh nghiệm backend Java và Python.</td>
+            </tr>
+            <tr>
+                <td style="padding:12px;font-weight:600;">Học vấn & Nền tảng</td>
+                <td style="padding:12px;text-align:center;">10%</td>
+                <td style="padding:12px;text-align:center;color:#22c55e;font-weight:bold;">100.0</td>
+                <td style="padding:12px;text-align:center;font-weight:bold;">10.0</td>
+                <td style="padding:12px;font-size:0.9em;color:#4a5568;">Cử nhân Kỹ thuật Phần mềm, Đại học Cần Thơ.</td>
+            </tr>
+            <tr>
+                <td style="padding:12px;font-weight:600;">Trình độ Ngoại ngữ</td>
+                <td style="padding:12px;text-align:center;">0%</td>
+                <td style="padding:12px;text-align:center;color:#ef4444;font-weight:bold;">0.0</td>
+                <td style="padding:12px;text-align:center;font-weight:bold;">0.0</td>
+                <td style="padding:12px;font-size:0.9em;color:#4a5568;">JD không yêu cầu ngoại ngữ. Trọng số 10% được phân bổ lại cho Kỹ năng chuyên môn.</td>
+            </tr>
+            <tr>
+                <td style="padding:12px;font-weight:600;">Mức độ gắn bó</td>
+                <td style="padding:12px;text-align:center;">10%</td>
+                <td style="padding:12px;text-align:center;color:#22c55e;font-weight:bold;">100.0</td>
+                <td style="padding:12px;text-align:center;font-weight:bold;">10.0</td>
+                <td style="padding:12px;font-size:0.9em;color:#4a5568;">Mỗi công ty làm 2-3 năm, ổn định.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-size:0.85em;color:#64748b;margin-top:12px;">
+        <strong>Ghi chú giải thích cách tính điểm:</strong><br>
+        - <strong>Điểm số (thang 100):</strong> Điểm đánh giá độc lập của tiêu chí đó (thang 0-100).<br>
+        - <strong>Điểm thành phần:</strong> Điểm đóng góp của tiêu chí sau khi nhân trọng số (Điểm thành phần = Điểm số x Trọng số). Tổng 5 điểm thành phần chính là Điểm Tương thích cuối cùng.
+    </p>
+</div>
+
+<div class="section-card">
+    <h2 class="section-title">3. Phân tích Chi tiết Lỗ hổng & Điểm mạnh</h2>
+    
+    <h3 style="font-size:16px;font-weight:600;color:#0f172a;margin-top:15px;margin-bottom:10px;">Điểm mạnh</h3>
+    <ul class="checklist">
+        <li>Kinh nghiệm backend đa dạng Java, Python, NodeJs.</li><li>Thành thạo Docker, CI/CD, cloud platform (GCP).</li><li>Có kinh nghiệm phát triển RESTful API và MVC.</li>
+    </ul>
+    
+    <h3 style="font-size:16px;font-weight:600;color:#0f172a;margin-top:25px;margin-bottom:10px;">Kỹ năng & từ khóa còn thiếu</h3>
+    <div class="tech-grid">
+        <div class="tech-item">
+            <div class="tech-label">Core Frameworks (Bắt buộc)</div>
+            <div><span class='badge core'>Vue.js</span></div>
+        </div>
+        <div class="tech-item">
+            <div class="tech-label">Hệ sinh thái & Phụ trợ</div>
+            <div><span class='badge supp'>Django</span><span class='badge supp'>Flask</span><span class='badge supp'>FastAPI</span><span class='badge supp'>Vue 3</span></div>
+        </div>
+        <div class="tech-item">
+            <div class="tech-label">Công cụ Build & DevOps</div>
+            <div><span class='badge tool'>Odoo</span></div>
+        </div>
+    </div>
+    
+    <h3 style="font-size:16px;font-weight:600;color:#0f172a;margin-top:25px;margin-bottom:10px;">Rủi ro tuyển dụng</h3>
+    <ul class="checklist">
+        <li>Thiếu hoàn toàn kinh nghiệm Vue.js, cần đào tạo lại.</li><li>Không có thông tin ngoại ngữ, có thể hạn chế giao tiếp.</li>
+    </ul>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"735cd9f8658c40ac9a1ba93bc35e3c3b","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
