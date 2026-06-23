@@ -1,0 +1,12 @@
+streamlit
+groq
+python-dotenv
+pydantic
+PyMuPDF
+python-docx
+pymongo
+fastapi
+uvicorn
+python-multipart
+openai
+

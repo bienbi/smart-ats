@@ -1,0 +1,24 @@
+.conda/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.env
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Dev / test / sample outputs
+extract_test.py
+main.py
+ket_qua_*.json
+*.html
+CV_Da_Toi_Uu.md
+Thu_Xin_Viec.md
+Bao_Cao_ATS.html
+
+# Docker (not needed inside build context layers for app)
+Dockerfile
+docker-compose.yml
+.dockerignore

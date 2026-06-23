@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ats_backend
+    expose:
+      - "8000"
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ats_frontend
+    ports:
+      - "8080:80" # Chạy cục bộ ở cổng 8080 (Khi lên máy ảo VM đổi lại thành "80:80")
+      # - "443:443" # Mở cổng HTTPS khi chạy thực tế trên máy ảo
+    # volumes:
+      # - /etc/letsencrypt:/etc/letsencrypt:ro # Mount chứng chỉ SSL Let's Encrypt trên máy ảo
+    depends_on:
+      - backend
+    restart: unless-stopped

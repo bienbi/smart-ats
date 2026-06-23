@@ -1,0 +1,49 @@
+# Environments & Virtual Envs
+.conda/
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+!.env.example
+
+# Python Caching & Compilation
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Frontend dependencies & builds
+node_modules/
+dist/
+build/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large Archive Files
+ats.tar.gz
+*.tar.gz
+*.zip
+*.rar
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+logs/
+*.log
